@@ -22,6 +22,8 @@ button.on("click", function() {
     var inputElement = d3.select("#datetime");
 
     var inputValue = inputElement.property("value");
+    
+    tbody.selectAll("tr").remove()
 
     console.log(inputValue);
     console.log(tableData);
@@ -34,6 +36,9 @@ button.on("click", function() {
 
 
     filteredData.forEach(function(data) {
+
+        
+
         console.log(data);
         var row = tbody.append("tr")
 
